@@ -5,19 +5,14 @@
 }
 
 /* Header Style */
-header {
+.head-cont {
     height: 130px;
     width: 100%;
     background-color: #333333;
     font-family: Bahnschrift, lato, sans-serif;
     color: white;
-    font-size: 2rem;
-}
-
-header h1 {
-    font-size: 1.5rem;
+    font-size: .7rem;
     padding: 1% 1%;
-    font-size: 70%;
 }
 
 .nav-main {
@@ -34,15 +29,16 @@ header h1 {
 .nav-main a {
     line-height: 50px;
     text-decoration: none;
-    color: white;
+    color: white; 
     font-size: 1rem;
 }
 
 /* Main Style */
 .main-aside {
     height: 50vh;
+    width: 100%;
     display: grid;
-    grid-template: auto / 1fr 1fr 1fr;
+    grid-template: 1fr / 1fr 1fr 1fr;
     font-family: Bahnschrift, lato, sans-serif;
     color: black;
     font-size: 70%;
@@ -50,16 +46,14 @@ header h1 {
 
 .main-cont {
     background-color: lightgray;
-    padding: 4% 4%;
-    /* height: 100%; */
+    padding: 1rem;
     grid-column: 1/3;
 }
 
 .side {
     background-color: white;
-    padding: 4% 4%;
+    padding: 1rem;
     grid-column: 3/4;
-    /* height: 100%; */
 }
 
 

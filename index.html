@@ -2,15 +2,124 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131 JavaScript</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta author="Christian Ahanonu" 
+        name="WDD 131 - Dynamic Web Development" 
+        content="Landing page"
+        description="biography of myself, where I live and links to developmet resource pages"
+  />
+  <title>WDD 131 - Dynamic Web Fundamentals - Christian I. Ahanonu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="scripts/getdates.js" defer></script>
+  <link rel="stylesheet" href="styles/base.css" />
 </head>
 
 <body>
-    <div class="html">
-        <h1>Welcome to the course</h1>
+  <!-- TOP HEADER CONTENT  -->
+  <div class="wdd-extend">
+    <h1 class="wdd-head">
+      WDD 131: Dynamic Web Fundamentals - Christian I. Ahanonu
+    </h1>
+  </div>
+
+
+  <!-- NAV CONTENT  -->
+  <header class="nav-extend">
+    <nav class="middle">
+      <a href="https://www.linkedin.com/in/christian-i-ahanonu-50980b1a0/" target="_blank">LinkedIn</a>
+      <a href="https://byui.instructure.com/" target="_blank">I-Learn</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/34?lang=eng" target="_blank">Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- CARD 1 -->
+    <div class="middle">
+      <section class="section1">
+        <div class="about-me">
+          <h2>About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <section>
+            <p>
+              My name is Christian I. Ahanonu. I was born in Nigeria and live
+              I in Abuja the central capital with my family. I currently work
+              as a security operative at a private security company. I am also
+              a student at BYU-Idaho majoring in software development. One of
+              the things I would love to do is to travel the world and visit
+              as many countries as I can.
+            </p>
+          </section>
+
+          <img class="my-photo" src="images/My-Photo.jpg" alt="my photo" />
+        </div>
+
+        <div class="abj-parent">
+          <h2 class="abj-head">Abuja, Nigeria</h2>
+          <hr id="underline-abj" />
+
+          <div class="abj-grid">
+            <span>
+              <img class="nig-flag" src="images/Nigeria-Flag.jpg" alt="flag of Nigeria" />
+              <p>Official Flag of Nigeria</p>
+            </span>
+            <p>
+              Abuja is the capital and eighth most populous city of Nigeria.
+              Situated in the middle of the country within the Federal Capital
+              Territory (FCT), it is a planned city built mainly in the 1980s
+              based on a master plan by International Planning Associates
+              (IPA). Abuja Geography is defined by Aso Rock (a 400-metre
+              monolith). In addition, there are other interesting areas such
+              as Zuma Rock (a 792-metre monolith), Presidential Complex,
+              National Assembly, Supreme Court, etc.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- CARD 1 END  -->
+
+
+      <!-- CARD 2 -->
+      <section class="section2">
+        <div class="web-dev-head">
+          <h2>Web Dev Resources</h2>
+        </div>
+
+        <ul class="res-list">
+          <li>
+            <a href="https://dev.to/" target="_blank">Dev.to Community</a>
+          </li>
+          <li>Smashing Magazine</li>
+          <li>CSS Tricks</li>
+          <li>
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank">W3 Schools</a>
+          </li>
+          <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+          <li>Lorem Picsum Image Paceholder</li>
+        </ul>
+      </section>
     </div>
+    <!-- CARD 2 END  -->
+
+  </main>
+
+  <!-- FOOTER CONTENT  -->
+  <footer class="foot-extend">
+    <div>
+      <p>
+        &copy; <span id="currentyear"></span> 🌺 Christian I. Ahanonu 🌺
+        Nigeria 
+      </p>
+      <p id="lastmodified"></p>
+    </div>
+  </footer>
+  <!-- FOOTER CONTENT END -->
+
 </body>
 
 </html>
