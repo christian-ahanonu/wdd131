@@ -64,9 +64,8 @@ hamburger*/
 .right-nav.active {
     background-color: #0d2310;
     height: 100vh;
-    width: 100%;
+    width: 75%;
     margin-top: 60px;
-    max-width: 450px;
     position: fixed;
     top: 0;
     right: -450px;
@@ -86,7 +85,7 @@ hamburger*/
     font-family: kanit, lato, sans-serif;
     line-height: 60px;
     padding-left: 30px;
-    font-size: 1.9em;
+    font-size: 1.5em;
 }
 
 
@@ -99,6 +98,7 @@ hamburger*/
     padding: 15px;
     text-align: center;
     color: #0d2310;
+    font-size: 1.2rem;
 }
 
 .pic-grid {
@@ -114,11 +114,13 @@ hamburger*/
 
 .pic img {
     width: 250px;
+    height: 156px;
     filter: grayscale(97%);
 }
 
 .pic figure figcaption {
     color: #0d2310;
+    font-size: .85em;
 }
 
 
@@ -131,14 +133,14 @@ footer {
     background-color: #0d2310;
     text-align: center;
     height: 80px;
-    line-height: 20px;
+    line-height: 16px;
     width: 100%;
 }
 
 .foot-nav {
     padding-top: 20px;
     font-weight: 500;
-    font-size: .9em;
+    font-size: .7em;
     color: white;
 }
 
