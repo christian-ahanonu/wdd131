@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat, lato, sans-serif;
+}
+
+/* 
+********************
+MOBILE VIEW
+********************
+  */
+
+/* NAV ELEMENTs */
+
+header {
+    background-color: #0d2310;
+    height: 60px;
+    width: 100%;
+}
+
+/*hamburger button*/
+#menu {  
+    display: inline;
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+    padding: .4rem .75rem;
+    color: #fff;
+    float: right;
+}
+
+#menu::before {
+    content: '☰';
+}
+
+#menu.active::before {
+    content: '✖';
+}
+
+.right-nav a:hover {
+    color: #acfbb7;;
+    cursor: pointer;
+}
+
+/* show nav items inside
+hamburger*/
+.right-nav a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: medium;
+}
+
+/* show hamburger */
+.right-nav.active {
+    background-color: #0d2310;
+    height: 100vh;
+    width: 100%;
+    margin-top: 60px;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    z-index: 1;
+    transition: .5s ease;
+}
+
+.right-nav.active {
+    right:0;
+}
+
+
+.left-nav {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-family: kanit, lato, sans-serif;
+    line-height: 60px;
+    padding-left: 30px;
+    font-size: 1.9em;
+}
+
+
+
+
+
+/* MAIN ELEMENTS   */
+
+.home {
+    padding: 15px;
+    text-align: center;
+    color: #0d2310;
+}
+
+.pic-grid {
+    display: grid;
+    grid: 1fr / auto;
+    margin: 0 auto;
+}
+
+.pic {
+    padding: 16px;
+    text-align: center;
+}
+
+.pic img {
+    width: 250px;
+    filter: grayscale(97%);
+}
+
+.pic figure figcaption {
+    color: #0d2310;
+}
+
+
+
+
+
+/* FOOTER ELEMENTS */
+
+footer {
+    background-color: #0d2310;
+    text-align: center;
+    height: 80px;
+    line-height: 20px;
+    width: 100%;
+}
+
+.foot-nav {
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: .9em;
+    color: white;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+    header {
+        height: 80px;
+        width: 100%;
+    }
+
+    header {
+        display: grid;
+        grid: auto / 1fr 40%;
+    }
+    
+    #menu {
+        display: none;
+    }
+
+    .right-nav {
+        display: block;
+    }
+
+
+    .right-nav a {
+        display: inline;    
+    }
+
+    .right-nav {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-right: 40px;
+    }
+    
+    .left-nav {
+        padding-top: 10px;
+        font-size: 2.3rem;
+    }
+
+    .pic-grid {
+        display: grid;
+        grid: 1fr / 1fr 1fr 1fr;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+
+    .right-nav a:hover {
+        transition: .5s ease;
+    }
+}
