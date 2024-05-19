@@ -24,7 +24,13 @@ header {
     width: 100%;
 }
 
-/*hamburger button*/
+.nav-holder {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+/*hamburger button styling*/
 #menu {  
     display: inline;
     font-size: 2rem;
@@ -33,6 +39,7 @@ header {
     padding: .4rem .75rem;
     color: #fff;
     float: right;
+    margin-right: 10px;
 }
 
 #menu::before {
@@ -41,23 +48,6 @@ header {
 
 #menu.active::before {
     content: '✖';
-}
-
-.right-nav a:hover {
-    color: #acfbb7;;
-    cursor: pointer;
-}
-
-/* show nav items inside
-hamburger*/
-.right-nav a {
-    display: block;
-    padding: 0.75rem;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    font-size: medium;
 }
 
 /* show hamburger */
@@ -73,10 +63,27 @@ hamburger*/
     transition: .5s ease;
 }
 
+/* display nav items inside
+hamburger*/
+.right-nav a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: medium;
+}
+
+
 .right-nav.active {
     right:0;
 }
 
+.right-nav a:hover {
+    color: #acfbb7;;
+    cursor: pointer;
+}
 
 .left-nav {
     text-decoration: none;
@@ -84,7 +91,7 @@ hamburger*/
     font-weight: 400;
     font-family: kanit, lato, sans-serif;
     line-height: 60px;
-    padding-left: 30px;
+    padding-left: 20px;
     font-size: 1.5em;
 }
 
@@ -103,13 +110,14 @@ hamburger*/
 
 .pic-grid {
     display: grid;
-    grid: 1fr / auto;
+    grid: auto / 1fr;
     margin: 0 auto;
 }
 
 .pic {
     padding: 16px;
     text-align: center;
+    /* margin: 0 auto; */
 }
 
 .pic img {

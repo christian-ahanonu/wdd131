@@ -1,6 +1,6 @@
 // NAV MENU
-const mainnav = document.querySelector ('.right-nav')
-const hambutton = document.querySelector ('#menu')
+const mainnav = document.querySelector ('.right-nav');
+const hambutton = document.querySelector ('#menu');
 
 hambutton.addEventListener ('click', () => {
     mainnav.classList.toggle('active');
@@ -15,15 +15,10 @@ hambutton.addEventListener ('click', () => {
 
 // FOOTER 
 
-// target the current year id in the HTML
-const currentYear = document.getElementById('currentyear');
+const currentYear = document.getElementById('currentyear'); // target the current year id in the HTML
+const today = new Date(); // Getting the current year and date
 
-
-// Getting the current year and date
-const today = new Date();
-
-// Add the current year to the HTML document
-currentYear.innerHTML = `${today.getFullYear()}`;
+currentYear.textContent = `${today.getFullYear()}`; // Add the current year to the HTML document
 
 // dynamically show the last date modified
 let dateLastModified = document.lastModified;
