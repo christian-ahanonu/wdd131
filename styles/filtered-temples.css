@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: montserrat, lato, sans-serif;
+
+}
+
+
+/* 
+********************
+MOBILE VIEW
+********************
+  */
+
+/* NAV ELEMENTs */
+
+header {
+    background-color: #0d2310;
+    height: 60px;
+    width: 100%;
+}
+
+.nav-holder {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+/*hamburger button styling*/
+#menu {  
+    display: inline;
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+    padding: .4rem .75rem;
+    color: #fff;
+    float: right;
+    margin-right: 10px;
+}
+
+#menu::before {
+    content: '☰';
+}
+
+#menu.active::before {
+    content: '✖';
+}
+
+/* show hamburger */
+.right-nav.active {
+    background-color: #0d2310;
+    height: 100vh;
+    width: 75%;
+    margin-top: 60px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    z-index: 1;
+    transition: .5s ease;
+}
+
+/* display nav items inside
+hamburger*/
+.right-nav a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: medium;
+}
+
+
+.right-nav.active {
+    right:0;
+}
+
+.right-nav a:hover {
+    color: #acfbb7;;
+    cursor: pointer;
+}
+
+.left-nav {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-family: kanit, lato, sans-serif;
+    line-height: 60px;
+    padding-left: 20px;
+    font-size: 1.5em;
+}
+
+
+
+/* MAIN ELEMENTS   */
+
+.home {
+    padding: 15px;
+    text-align: center;
+    color: #0d2310;
+    font-size: 1.2rem;
+}
+
+.pic-grid {
+    display: grid;
+    grid: auto / 1fr;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+section {
+    width: 350px;
+    height: 250px;
+    padding-bottom: 340px;
+    position: relative;
+    line-height: 1.5;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 2px 2px 5px #e1e1ea, -2px -0px 5px  #e1e1ea;
+    margin: 0 auto;
+    margin-bottom: 50px ;
+}
+
+.pic-grid img {
+    width: 100%;
+    height: 209px;
+    filter: grayscale(97%);
+    position: absolute;
+    bottom: 0;
+}
+
+section h3, section p {
+    padding-left: 10px;
+}
+
+section h3 {
+    padding-top: 15px;
+    
+}
+
+
+
+/* FOOTER ELEMENTS */
+
+footer {
+    background-color: #0d2310;
+    text-align: center;
+    height: 80px;
+    line-height: 16px;
+    width: 100%;
+}
+
+.foot-nav {
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: .7em;
+    color: white;
+}
+
+
+
+/* Large Screen  */
+
+@media screen and (min-width: 1024px) {
+
+    header {
+        height: 80px;
+        width: 100%;
+    }
+
+    header {
+        display: grid;
+        grid: auto / 1fr 40%;
+    }
+    
+    #menu {
+        display: none;
+    }
+
+    .right-nav {
+        display: block;
+    }
+
+
+    .right-nav a {
+        display: inline;    
+    }
+
+    .right-nav {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-right: 40px;
+    }
+    
+    .left-nav {
+        padding-top: 10px;
+        font-size: 2.3rem;
+    }
+
+    .right-nav a:hover {
+        transition: .5s ease;
+    }
+
+
+
+    /* MAIN  */
+
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .pic-grid {
+        display: grid;
+        grid: auto / 1fr 1fr 1fr;
+        gap: 30px;
+        padding: 20px 0;
+    }
+    
+    section {
+        width: 300px;
+        height: 200px;
+        padding-bottom: 340px;
+        position: relative;
+        line-height: 1.5;
+        background-color: rgb(241, 241, 241);
+        box-shadow: 2px 2px 5px #e1e1ea, -2px -0px 5px  #e1e1ea;
+        transition: transform 0.3s ease;
+    }
+    
+    
+    .pic-grid img {
+        width: 100%;
+        height: 200px;
+        filter: grayscale(97%);
+        position: absolute;
+        bottom: 0;
+    }
+
+    section h3, section p {
+        padding-left: 10px;
+    }
+    
+    section h3 {
+        padding-top: 15px;
+        
+    }
+
+
+    /* FOOTER  */
+    .foot-nav {
+        font-size: .9rem;   
+    }
+
+    .foot-nav p {
+        line-height: 23px;
+    }
+}
