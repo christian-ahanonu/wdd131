@@ -85,14 +85,14 @@ hr {
 
 .table thead, tbody {
     padding: 10px;
-    width: 50px;
+    /* width: 50px; */
 }
 
 th, td {
     padding: 9px;
     text-align: center;
     height: 60px;
-    width: 200px;    
+    width: 200px;
 }
 
 thead th {
@@ -121,6 +121,9 @@ tbody tr td:nth-child(5) {
 /* ----------Table End----------- */
 
 
+
+
+
 .normal-para, .color-para {
     margin-top: 40px;
 }
@@ -134,6 +137,7 @@ tbody tr td:nth-child(5) {
 .mobile{
     margin-top: 100px;
     margin-bottom: 50px;
+
 }
 
 .desktop h3{
@@ -161,26 +165,33 @@ footer {
     color: white;
     text-align: center;
     font-weight: 450;
-}
-
-.foot-nav {
+    font-size: .8rem;
     padding-top: 17px;
     line-height: 7px;   
 }
+
 /* -----------------FOOTER END-----------------  */
 
 
+@media screen and (max-width: 400px) {
 
-/* @media screen and (min-width: 425px) {
-    header {
-        display: block;
-        padding: 0 10px;
-        padding-top: 20px;
-        margin: 0 auto;
+    .table thead, tbody {
+        padding: 1px;
+        /* width: 50px; */
+    }
+    
+    th, td {
+        padding: 1px;
+        text-align: center;
+        height: 60px;
+        /* width: 100%; */
+    }
+
+    .mobile {
         width: 100%;
     }
 
-    hr {
+    .mobile img {
         width: 100%;
     }
-} */
+}

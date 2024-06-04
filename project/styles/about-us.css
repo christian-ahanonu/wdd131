@@ -50,7 +50,7 @@ fieldset {
     border-radius: 4px;
     height: 39px;
     width: 100%;
-    max-width: 390px;
+    max-width: 340px;
     display: block;
     padding-left: 10px;
     margin-top: 2px;
@@ -84,8 +84,8 @@ fieldset {
 }
 
 .form-img {
-    width: 425px;
-    height: 427px;
+    width: auto;
+    height: auto;
     margin: 0 auto;
 }
 
