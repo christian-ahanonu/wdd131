@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Christian I. Ahanonu">
+    <meta name="description" content="Xplorer landing page">
+    <title>Xplorer | Home</title>
+
+    <link rel="shortcut icon" href="images/binoculars_630741.png" type="image/x-icon" sizes="16x16">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/index.css" media="screen">
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-flex">
+            <a href="index.html">Xplorer</a>
+            <div id="show-menu"></div> 
+
+            <div class="link-flex">
+                
+                <div id="hide-menu"></div>
+                <a href="index.html">Home</a>
+                <a href="location.html">Location</a>
+                <a href="about-us.html">About Us</a>
+                <a href="siteplan.html">Site Plan</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="photo-container">
+
+            <div class="slides">
+                <picture>
+                    <source srcset="images/santorini-greece.webp" media="(min-width: 500px)">
+                    <img src="images/small_screen/santorini-greece.webp" alt="santorini-greece" width="375" height="250">
+                </picture>  
+                <div class="caption">Sanitorini - Greece</div>
+            </div>
+        
+            <div class="slides">
+                <picture>
+                    <source srcset="images/effiel-tower-paris-france.webp" media="(min-width: 500px)">
+                    <img src="images/small_screen/effiel-tower-paris-france.webp" alt="effiel-tower-paris-france" width="375" height="250" loading="lazy">
+                </picture>
+                <div class="caption">Effiel Tower Paris - France</div>
+            </div>
+
+            <div class="slides">
+                <picture>
+                    <source srcset="images/statue-of-liberty-NY-us.webp" media="(min-width: 500px)">
+                    <img src="images/small_screen/statue-of-liberty-NY-us.webp" alt="statue-of-liberty-NY-us" width="375" height="250" loading="lazy">
+                </picture>
+                <div class="caption">Statue of Liberty, New York - US</div>
+            </div>
+
+            <div class="slides">
+                <picture>
+                    <source srcset="images/machu-picchu-peru.webp" media="(min-width: 500px)">
+                    <img src="images/small_screen/machu-picchu-peru.webp" alt="machu-picchu-peru" width="375" height="250" loading="lazy">
+                </picture>
+                <div class="caption">Machu Picchu - Peru</div>
+            </div>
+
+            <div class="slides">
+                <picture>
+                    <source srcset="images/taj-mahal-agra-india.webp" media="(min-width: 500px)">
+                    <img src="images/small_screen/taj-mahal-agra-india.webp" alt="taj-mahal-agra-india" width="375" height="250" loading="lazy">         
+                </picture>
+                <div class="caption">Taj Mahal Agra - India</div>
+            </div>
+
+            <div class="slides">
+                <picture>
+                    <source srcset="images/grand-canyan-arizona-us.webp" media="(min-width: 500px)">
+                    <img src="images/small_screen/grand-canyan-arizona-us.webp" alt="grand-canyan-arizona-us" width="375" height="250" loading="lazy">
+                </picture>
+                <div class="caption">Grand Canyan, Arizona - US</div>
+            </div>
+
+            <div class="slides">
+                <picture>
+                    <source srcset="images/great-wall-of-china-china.webp" media="(min-width: 500px)">
+                    <img src="images/small_screen/great-wall-of-china-china.webp" alt="great-wall-of-china-china" width="375" height="250" loading="lazy">
+                </picture>
+                <div class="caption">The Great Wall of China - China</div>
+            </div>
+
+            <div class="slides">
+                <picture>
+                    <source srcset="images/opera-house-sydney-australia.webp" media="(min-width: 500px)">
+                    <img src="images/small_screen/opera-house-sydney-australia.webp" alt="opera-house-sydney-australia" width="375" height="250" loading="lazy">
+                </picture>
+                <div class="caption">Opera House, Sydney - Australia</div>
+            </div>
+
+            <div class="slides">
+                <picture>
+                    <source srcset="images/christ-the-redeemer-rio-brazil.webp" media="(min-width: 500px)">
+                    <img src="images/small_screen/christ-the-redeemer-rio-brazil.webp" alt="christ-the-redeemer-rio-brazil" width="375" height="250" loading="lazy">
+                </picture>
+                <div class="caption">Christ The Redeemer, Rio de Janeiro - Brazil</div>
+            </div>
+
+            <div class="slides">
+                <picture>
+                    <source srcset="images/colosseum-rome-italy.webp" media="(min-width: 500px)">
+                    <img src="images/small_screen/colosseum-rome-italy.webp" alt="colosseum-rome-italy" width="375" height="250" loading="lazy">
+                </picture>
+                <div class="caption">Colosseum Rome - Italy</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="foot-nav">
+            <p>&copy; <span id="currentyear"></span> 🌺 Christian I. Ahanonu 🌺 Nigeria</p>
+            <p id="lastmodified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,287 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #010c14;
+  --secondary-color: #69bec9;
+  --accent-color1: #7c9885;
+  --accent-color2: #b5b682;
+  --accent-color3: #fedc97;
+}
+
+body {
+  font-size: 16px;
+  font-family: cabin, "Humanst521 BT", sans-serif;
+  background-color: #fdfdfd;
+}
+
+
+
+
+
+
+/* -----------------HEADER-----------------  */
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: var(--primary-color);
+}
+
+/* Parent link nav  */
+.top-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 260px;
+  line-height: 70px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.top-flex a {
+  font-size: 2.5rem;
+  padding-left: 18px;
+}
+
+#show-menu {
+  display: block;
+}
+
+#show-menu::before {
+  content: "☰";
+}
+
+#show-menu {
+  color: white;
+  font-size: 35px;
+}
+
+.link-flex {
+  display: none;
+}
+
+/* right nav */
+.link-flex.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 100vh;
+  background-color: var(--accent-color1);
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+.link-flex a {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.link-flex a:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#hide-menu::before {
+  content: '✖';
+}
+
+#hide-menu {
+  display: block;
+  font-size: 35px;
+  margin-left: 250px;
+  color: white;
+}
+
+/* -----------------HEADER END-----------------  */
+
+
+
+
+
+
+/* -----------------MAIN-----------------  */
+main {
+  padding: 100px 0;
+}
+
+/* Slideshow  */
+.photo-container {
+  position: relative;
+  padding-top: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.slides {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: var(--accent-color2);
+  font-weight: bold;
+  font-size: 35px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: black;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+
+.caption {
+  padding-top: 15px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+
+.slide-bars {
+  margin-top: 40px;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* -----------------MAIN END-----------------  */
+
+
+
+
+
+
+
+/* -----------------FOOTER-----------------  */
+
+footer {
+  background-color: var(--primary-color);
+  text-align: center;
+  height: 90px;
+  width: 100%;
+  margin-top: 10vh;
+}
+
+.foot-nav {
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+}
+
+.foot-nav p {
+  padding: 2px 0;
+}
+
+/* -----------------FOOTER END-----------------  */
+
+
+
+
+/* -----------------MEDIA QUERY-----------------  */
+
+@media screen and (min-width: 1024px) {
+
+  #show-menu {
+    display: none;
+  }
+
+  .link-flex {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    position: static;
+    height: auto;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .link-flex a:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+  }
+
+  .top-flex {
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 50%;
+    /* border: 1px solid red; */
+  }
+
+
+  .photo-container{
+    width: 1000px;
+    height: 667px;
+  }
+
+  .about-heading h1 {
+    text-align: left;
+    margin-top: 30px;
+    padding-left: 18px;
+  }
+
+  .about-heading {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .about-heading p {
+    line-height: 1.6;
+  }
+
+  #hide-menu {
+    display: none;
+  }
+}

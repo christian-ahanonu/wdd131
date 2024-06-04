@@ -1,0 +1,143 @@
+
+/* -----------------HEADER-----------------  */
+
+/* -----------------HEADER END-----------------  */
+
+
+
+
+
+
+/* -----------------MAIN-----------------  */
+.about-heading {
+    margin-top: -70px;
+    margin-bottom: -200px;
+}
+
+.about-heading h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+fieldset {
+    border: transparent;
+}
+
+.form-con legend {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+.about-heading p{
+    padding: 0 20px;
+    padding-top: 50px;
+}
+
+.form-con {
+    margin: 60px 0;
+    padding-left: 20px;
+}
+
+.form-con label {
+    display: block;
+    padding-top: 30px;
+    font-weight: 600;
+}
+
+.form-con input {
+    border: 1px solid rgba(142, 141, 141, 0.3);
+    border-radius: 4px;
+    height: 39px;
+    width: 100%;
+    max-width: 390px;
+    display: block;
+    padding-left: 10px;
+    margin-top: 2px;
+    background-color: #eeee;
+    font-family: cabin, 'HumanstB21 BT', sans-serif;
+}
+
+.form-con input:hover {
+    background-color: rgb(216, 216, 216);
+    transition: .6s ease;
+}
+
+
+#button {
+    width: 150px;
+    margin-top: 30px;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+#button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+.form-parent-con {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.form-img {
+    width: 425px;
+    height: 427px;
+    margin: 0 auto;
+}
+
+.form-img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* -----------------MAIN END-----------------  */
+
+
+
+
+
+
+
+
+
+
+/* -----------------FOOTER-----------------  */
+
+/* -----------------FOOTER END-----------------  */
+
+
+
+
+
+
+/* -----------------MEDIA QUERY-----------------  */
+
+@media screen and (min-width: 1024px) {
+    
+    .form-parent-con {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .form-img {
+        width: 500px;
+        height: 500px;
+    }
+    
+    .form-img img {
+        width: 100%;
+        height: 100%;
+        padding-top: 30px;
+        margin: 0 auto;
+    }
+    
+      .form-con {
+        width: 50%;
+      }
+}
+

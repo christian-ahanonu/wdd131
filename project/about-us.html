@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Christian I. Ahanonu">
+    <meta name="description" content="About Us page. This page gives insight about our company. Who we are? and what we do.">
+    <title>About Us</title>
+
+    <link rel="shortcut icon" href="images/binoculars_630741.png" type="image/x-icon" sizes="16x16">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/index.css" media="screen">
+    <link rel="stylesheet" href="styles/about-us.css" media="screen">
+    <script src="scripts/about-us.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-flex">
+            <a href="index.html">Xplorer</a>
+            <div id="show-menu"></div> 
+
+            <div class="link-flex">
+                
+                <div id="hide-menu"></div>
+                <a href="index.html">Home</a>
+                <a href="location.html">Location</a>
+                <a href="about-us.html">About Us</a>
+                <a href="siteplan.html">Site Plan</a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="about-heading">
+            <h1>About us</h1>
+
+            <p>
+                Xplorer represent a community of people who likes to travel 
+                and explore the world. Our mission is to provide a platform 
+                where people can share their travel experiences. <br>
+                
+                <br>
+                We are focused on creating or renewing memories in the 
+                places people have visited or would love to visit someday. 
+                Our hope is that people can feel connected to places and people 
+                they would love to visit and experience the richness in diversity.
+            </p>
+
+            <!-- form  -->
+            <div class="form-parent-con">
+
+                <form method="get" action="thanks.html" class="form-con">
+                    <fieldset>
+                        <legend>Join our Community</legend>
+        
+                        <label>First Name*<input type="text" name="firstName" required></label>
+                        <label>Last Name*<input type="text" name="lastName" required></label>
+                        <label>Email*<input type="email" name="email" required placeholder="someone@gmail.com"></label>
+                        <label>Phone Number*<input type="number" name="phone" placeholder="1234" required></label>
+                    </fieldset>
+                    
+                    <input type="submit" name="submit" id="button" value="Register">
+    
+                </form>
+
+                <div class="form-img">
+                    <img src="images/join-us.jpg" alt="people standing together" width="2000" height="2000">
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <footer>
+        <div class="foot-nav">
+            <p>&copy; <span id="currentyear"></span> 🌺 Christian I. Ahanonu 🌺 Nigeria</p>
+            <p id="lastmodified"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
