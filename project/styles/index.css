@@ -169,8 +169,8 @@ img {
 .caption {
   padding-top: 15px;
   text-align: center;
-  font-size: 1.4rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 
@@ -264,6 +264,8 @@ footer {
   }
 
 
+
+
   .photo-container{
     width: 1000px;
     height: 667px;
@@ -286,5 +288,12 @@ footer {
 
   #hide-menu {
     display: none;
+  }
+
+  .caption {
+    padding-top: 15px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
   }
 }
