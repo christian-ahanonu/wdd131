@@ -50,7 +50,8 @@ fieldset {
     border-radius: 4px;
     height: 39px;
     width: 100%;
-    max-width: 327px;
+    /* max-width: 327px; */
+    max-width: 85%;
     display: block;
     padding-left: 10px;
     margin-top: 2px;
@@ -138,6 +139,11 @@ fieldset {
     
       .form-con {
         width: 50%;
-      }
+    }
+
+    .form-con input {
+        height: 39px;
+        width: 100%;
+    }
 }
 

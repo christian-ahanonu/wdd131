@@ -80,12 +80,10 @@ hr {
 /* ----------Table Section----------- */
 .table {
     margin: 0 auto;
-    /* padding-right: 20px; */
 }
 
 .table thead, tbody {
     padding: 10px;
-    /* width: 50px; */
 }
 
 th, td {
@@ -165,7 +163,7 @@ footer {
     color: white;
     text-align: center;
     font-weight: 450;
-    font-size: .8rem;
+    font-size: 1rem;
     padding-top: 17px;
     line-height: 7px;   
 }
@@ -177,14 +175,12 @@ footer {
 
     .table thead, tbody {
         padding: 1px;
-        /* width: 50px; */
     }
     
     th, td {
         padding: 1px;
         text-align: center;
         height: 60px;
-        /* width: 100%; */
     }
 
     .mobile {
@@ -193,5 +189,9 @@ footer {
 
     .mobile img {
         width: 100%;
+    }
+
+    .foot-nav {
+        font-size: .8rem;
     }
 }
